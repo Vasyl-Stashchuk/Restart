@@ -78,7 +78,7 @@ nav {
 }
 
 .no-webp .first-screen {
-  background-image: url(/img/first-screen/background.png); }
+  background-image: url(../img/first-screen/background.png); }
 
 .first-screen {
   display: flex;
@@ -406,7 +406,7 @@ nav {
 }
 
 .no-webp .about-banner {
-  background-image: url(/img/about-banner/handshake.png); }
+  background-image: url(../img/about-banner/handshake.png); }
 
 .about-banner {
   background-repeat: no-repeat;
@@ -456,6 +456,6 @@ nav {
   left: -3px;
 }
 
-.webp .first-screen { background-image: url(/img/first-screen/background.webp); }
+.webp .first-screen { background-image: url(../img/first-screen/background.webp); }
 
-.webp .about-banner { background-image: url(/img/about-banner/handshake.webp); }
+.webp .about-banner { background-image: url(../img/about-banner/handshake.webp); }
