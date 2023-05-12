@@ -1,4 +1,43 @@
-const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
+
+
+
+
+
+
+
+
+
+
+
+function testWebP(callback) {
+
+    var webP = new Image();
+    webP.onload = webP.onerror = function () {
+    callback(webP.height == 2);
+    };
+    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+    }
+    
+    testWebP(function (support) {
+    
+    if (support == true) {
+    document.querySelector('body').classList.add('webp');
+    }else{
+    document.querySelector('body').classList.add('no-webp');
+    }
+    });
+
+
+
+    const menuIcon = document.querySelector('.menu-icon');
+const menu = document.querySelector('.menu');
+
+menuIcon.addEventListener('click', () => {
+  menu.classList.toggle('show-menu');
+});
+
+
+    const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
     const buttonElems = document.querySelectorAll(btnOpen);
     const modalElem = document.querySelector(modal);
   
@@ -52,39 +91,3 @@ const modalController = ({modal, btnOpen, btnClose, time = 300}) => {
 //     btnOpen: '.section__button2',
 //     btnClose: '.modal__close'
 //   });
-
-
-const menuIcon = document.querySelector('.menu-icon');
-const menu = document.querySelector('.menu');
-
-menuIcon.addEventListener('click', () => {
-  menu.classList.toggle('show-menu');
-});
-
-
-
-
-
-
-
-function testWebP(callback) {
-
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-    callback(webP.height == 2);
-    };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-    }
-    
-    testWebP(function (support) {
-    
-    if (support == true) {
-    document.querySelector('body').classList.add('webp');
-    }else{
-    document.querySelector('body').classList.add('no-webp');
-    }
-    });
-
-
-
-
