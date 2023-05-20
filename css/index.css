@@ -1514,6 +1514,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 28px;
   }
 
   .first-screen .ball {
@@ -1534,7 +1535,7 @@ p {
   .screen {
     background: #FFFFFF;
     width: 280px;
-    height: 217px;
+    height: 197px;
     display: flex;
     justify-content: center;
   }
@@ -1545,7 +1546,7 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 7px;
+    bottom: -2px;
     left: 4px;
   }
 
@@ -1654,7 +1655,7 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 9% 4%;
+    padding: 13% 4%;
     padding-bottom: 92px;
     -moz-columns: unset;
          columns: unset;
@@ -2700,7 +2701,6 @@ p {
     color: black;
     font-size: 1.5rem;
     z-index: 2;
-    position: relative;
   }
 
   .show-menu {
@@ -2709,9 +2709,7 @@ p {
     justify-content: flex-end;
     align-items: center;
     position: absolute;
-    top: 3%;
     gap: 12px;
-    left: 16px;
     width: 100%;
     background-color: #fff;
     margin: 0;
@@ -2720,6 +2718,9 @@ p {
     width: 290px;
     height: 386px;
     border-radius: 8px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .show-menu li {
@@ -2749,6 +2750,7 @@ p {
   .cancel1 {
     width: 30px;
     height: 20px;
+    display: block;
   }
 
   .no-webp .cancel2 {
@@ -2758,8 +2760,11 @@ p {
     width: 26px;
     height: 25.49px;
     background-repeat: no-repeat;
-    left: -17px;
-    top: 2px;
+    transform: translate(388%, -1532%);
+    left: 50%;
+    top: 50%;
+    display: block;
+    position: absolute;
   }
 
   .nav {
@@ -4272,6 +4277,20 @@ p {
 @media (min-width: 768px) and (max-width: 1919px) {
   .menu {
     display: none;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .menu .uniqe {
+    position: relative;
+    top: 8px;
+  }
+
+  .menu hr {
+    width: 100%;
+    position: relative;
+    top: -11px;
   }
 
   .menu-icon {
@@ -4283,39 +4302,71 @@ p {
     color: black;
     font-size: 1.5rem;
     z-index: 2;
-    position: relative;
-    top: 4px;
-    left: -14px;
   }
 
   .show-menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     position: absolute;
-    top: 7%;
-    left: 0;
+    gap: 8px;
     width: 100%;
-    background-color: white;
+    background-color: #fff;
     margin: 0;
     padding: 0;
     z-index: 1;
+    width: 694px;
+    height: 386px;
+    border-radius: 8px;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .show-menu li {
-    margin-bottom: 1rem;
+    margin-bottom: 28px;
   }
 
   .show-menu li a {
-    color: black;
-    font-size: 1.2rem;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #333333;
     text-decoration: none;
   }
 
   nav {
     display: flex;
     flex-direction: column;
+  }
+
+  .no-webp .cancel1 {
+    background-image: url(../img/top/burgertab.png); }
+
+  .cancel1 {
+    width: 40px;
+    height: 22px;
+    display: block;
+    left: -14px;
+    top: 1px;
+  }
+
+  .no-webp .cancel2 {
+    background-image: url(../img/top/burgercancel.png); }
+
+  .cancel2 {
+    width: 26px;
+    height: 25.49px;
+    background-repeat: no-repeat;
+    transform: translate(1174%, -1592%);
+    left: 50%;
+    top: 50%;
+    display: block;
+    position: absolute;
   }
 
   .nav {
@@ -4337,14 +4388,16 @@ p {
     width: 264px;
   }
 
+  .logo {
+    position: relative;
+    left: 14px;
+  }
+
   .logo a {
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    position: relative;
-    top: 0px;
-    left: 13px;
   }
 
   .section {
@@ -4521,4 +4574,14 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1919px) {
 
   .webp .form { background-image: url(../img/sct-form/Rectangle106tab.webp); }
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+
+  .webp .cancel1 { background-image: url(../img/top/burgertab.webp); }
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+
+  .webp .cancel2 { background-image: url(../img/top/burgercancel.webp); }
 }
