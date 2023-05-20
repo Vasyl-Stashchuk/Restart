@@ -2718,7 +2718,7 @@ p {
     width: 290px;
     height: 386px;
     border-radius: 8px;
-    top: 25%;
+    top: 220px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -2751,6 +2751,9 @@ p {
     width: 30px;
     height: 20px;
     display: block;
+    position: relative;
+    left: 1px;
+    top: -2px;
   }
 
   .no-webp .cancel2 {
@@ -2762,7 +2765,7 @@ p {
     background-repeat: no-repeat;
     transform: translate(388%, -1532%);
     left: 50%;
-    top: 50%;
+    top: 443px;
     display: block;
     position: absolute;
   }
@@ -4319,7 +4322,7 @@ p {
     width: 694px;
     height: 386px;
     border-radius: 8px;
-    top: 24%;
+    top: 211px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -4351,6 +4354,7 @@ p {
     width: 40px;
     height: 22px;
     display: block;
+    position: relative;
     left: -14px;
     top: 1px;
   }
@@ -4364,7 +4368,7 @@ p {
     background-repeat: no-repeat;
     transform: translate(1174%, -1592%);
     left: 50%;
-    top: 50%;
+    top: 443px;
     display: block;
     position: absolute;
   }
