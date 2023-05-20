@@ -31,9 +31,20 @@ function testWebP(callback) {
 
     const menuIcon = document.querySelector('.menu-icon');
 const menu = document.querySelector('.menu');
+const menuCancel = document.querySelector('.fa-bars');
 
 menuIcon.addEventListener('click', () => {
   menu.classList.toggle('show-menu');
+  // menuCancel.classList.toggle('cancel');
+
+  if (menuCancel.classList.contains("cancel1")) {
+      menuCancel.classList.remove('cancel1');
+      menuCancel.classList.add('cancel2');
+  } else {
+      menuCancel.classList.remove('cancel2');
+      menuCancel.classList.add('cancel1');
+    }
+  
 });
 
 
